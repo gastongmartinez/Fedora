@@ -106,6 +106,7 @@ chmod +x marksman
 mv marksman "$HOME/.local/bin/"
 
 wget https://github.com/zellij-org/zellij/releases/download/v0.42.2/zellij-x86_64-unknown-linux-musl.tar.gz
+tar -xvf zellij*.tar.gz
 chmod +x zellij
 rm zellij-x86_64-unknown-linux-musl.tar.gz
 mv zellij "$HOME/.local/bin/"
