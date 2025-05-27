@@ -22,6 +22,10 @@ cd WhiteSur-gtk-theme || return
 ./tweaks.sh -F
 sudo ./tweaks.sh -g -b "/usr/share/backgrounds/wallpapers/Landscapes/landscapes 01.jpg"
 sudo flatpak override --filesystem=xdg-config/gtk-4.0
+if [ ! -d ~/.themes ]; then
+    mkdir -p ~/.themes
+    tar -xf ./release/WhiteSur-Dark.tar.xz -C ~/.themes/
+fi
 cd ..
 
 git clone https://github.com/vinceliuice/WhiteSur-cursors.git
