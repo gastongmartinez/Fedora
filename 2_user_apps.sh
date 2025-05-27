@@ -104,7 +104,11 @@ wget https://github.com/artempyanykh/marksman/releases/download/2024-12-18/marks
 mv marksman-linux-x64 marksman
 chmod +x marksman
 mv marksman "$HOME/.local/bin/"
-cargo install --locked zellij
+
+wget https://github.com/zellij-org/zellij/releases/download/v0.42.2/zellij-x86_64-unknown-linux-musl.tar.gz
+chmod +x zellij
+rm zellij-x86_64-unknown-linux-musl.tar.gz
+mv zellij "$HOME/.local/bin/"
 
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
