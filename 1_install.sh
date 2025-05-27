@@ -285,6 +285,8 @@ if [[ $GAPPS =~ ^[Ss]$ ]]; then
     for PAQ in "${GNAPPS[@]}"; do
         dnf install "$PAQ" -y
     done
+
+    sed -i "s/Icon=\/var\/lib\/AccountsService\/icons\/$USER/Icon=\/usr\/share\/backgrounds\/wallpapers\/Fringe\/fibonacci3.jpg/g" "/var/lib/AccountsService/users/$USER"
 fi
 
 rpm -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
