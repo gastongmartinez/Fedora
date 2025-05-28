@@ -56,6 +56,7 @@ sh -c 'echo -e "[brave-browser-rpm-release.s3.brave.com_x86_64_]\nname=created b
 rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 
 # Librewolf
+rpm --import https://rpm.librewolf.net/pubkey.gpg
 curl -fsSL https://repo.librewolf.net/librewolf.repo | pkexec tee /etc/yum.repos.d/librewolf.repo
 
 # Google Chrome
