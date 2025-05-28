@@ -77,8 +77,6 @@ USER=$(grep "1000" /etc/passwd | awk -F : '{ print $1 }')
 ############################### Apps Generales ################################
 PAQUETES=(
     #### Powermanagement ####
-    'tlp'
-    'tlp-rdw'
     'powertop'
 
     #### WEB ####
