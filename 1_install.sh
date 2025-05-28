@@ -290,6 +290,7 @@ wget https://corretto.aws/downloads/latest/amazon-corretto-17-x64-linux-jdk.rpm
 wget https://corretto.aws/downloads/latest/amazon-corretto-21-x64-linux-jdk.rpm
 dnf install amazon-corretto-17-x64-linux-jdk.rpm -y
 dnf install amazon-corretto-21-x64-linux-jdk.rpm -y
+dnf install https://download2.gluonhq.com/scenebuilder/23.0.1/install/linux/SceneBuilder-23.0.1.rpm -y
 ###############################################################################
 
 ############################# Codecs ###########################################
