@@ -136,6 +136,7 @@ PAQUETES=(
     'stacer'
     'timeshift'
     'setroubleshoot'
+    'solaar'
 
     #### Multimedia ####
     'vlc'
