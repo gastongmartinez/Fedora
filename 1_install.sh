@@ -138,6 +138,7 @@ PAQUETES=(
     'timeshift'
     'setroubleshoot'
     'solaar'
+    'splix'
 
     #### Multimedia ####
     'vlc'
