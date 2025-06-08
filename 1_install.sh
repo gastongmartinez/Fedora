@@ -147,6 +147,7 @@ PAQUETES=(
     'HandBrake'
     'HandBrake-gui'
     'audacious'
+    'clipgrab'
 
     #### Juegos ####
     'chromium-bsu'
