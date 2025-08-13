@@ -94,6 +94,7 @@ touch ~/.zshrc
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.local/share/zsh/powerlevel10k
 chsh -s /usr/bin/zsh
 
+# LSPs, Linters. tools, etc
 go install golang.org/x/tools/gopls@latest
 go install golang.org/x/tools/cmd/goimports@latest
 go install github.com/go-delve/delve/cmd/dlv@latest
@@ -106,16 +107,21 @@ mv marksman-linux-x64 marksman
 chmod +x marksman
 mv marksman "$HOME/.local/bin/"
 
-wget https://github.com/zellij-org/zellij/releases/download/v0.42.2/zellij-x86_64-unknown-linux-musl.tar.gz
+
+# ZelliJ
+wget https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-x86_64-unknown-linux-musl.tar.gz
 tar -xvf zellij*.tar.gz
 chmod +x zellij
 rm zellij-x86_64-unknown-linux-musl.tar.gz
 mv zellij "$HOME/.local/bin/"
 
+# Atuin
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
+# Zed Editor
 curl -f https://zed.dev/install.sh | sh
 
+# Inicializacion MySQL
 sudo mysql_secure_installation
 
 sleep 5
