@@ -156,6 +156,7 @@ PAQUETES=(
     'nmap'
     'wireshark'
     'firewall-applet'
+    'NetworkManager-tui'
     #'gns3-gui'
     #'gns3-server'
 
