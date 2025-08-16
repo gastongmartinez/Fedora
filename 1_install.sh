@@ -79,9 +79,9 @@ dnf update -y
 USER=$(grep "1000" /etc/passwd | awk -F : '{ print $1 }')
 
 ############################# Codecs ###########################################
+dnf install libavcodec-freeworld -y
+dnf group install multimedia -y
 dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel -y
-dnf install lame\* --exclude=lame-devel -y
-dnf group upgrade --with-optional Multimedia -y
 dnf swap ffmpeg-free ffmpeg --allowerasing -y
 ################################################################################
 
