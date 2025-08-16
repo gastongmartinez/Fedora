@@ -54,8 +54,8 @@ dnf check-update
 dnf makecache
 
 # Brave
-sh -c 'echo -e "[brave-browser-rpm-release.s3.brave.com_x86_64_]\nname=created by dnf config-manager from https://brave-browser-rpm-release.s3.brave.com/x86_64/\nbaseurl=https://brave-browser-rpm-release.s3.brave.com/x86_64/\nenabled=1" > /etc/yum.repos.d/brave-browser-rpm-release.s3.brave.com_x86_64_.repo'
 rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+dnf config-manager addrepo --from-repofile=https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
 
 # Librewolf
 rpm --import https://rpm.librewolf.net/pubkey.gpg
