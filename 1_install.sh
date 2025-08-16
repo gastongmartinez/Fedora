@@ -215,7 +215,7 @@ PAQUETES=(
     'postgis'
     'postgis-client'
     'postgis-utils'
-    'mysql-server'
+    'mysql-server --allowerasing'
     'sqlite'
     'sqlite-analyzer'
     'sqlite-tools'
