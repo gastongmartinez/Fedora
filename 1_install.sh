@@ -294,6 +294,8 @@ wget https://corretto.aws/downloads/latest/amazon-corretto-21-x64-linux-jdk.rpm
 dnf install amazon-corretto-17-x64-linux-jdk.rpm -y
 dnf install amazon-corretto-21-x64-linux-jdk.rpm -y
 dnf install https://download2.gluonhq.com/scenebuilder/24.0.1/install/linux/SceneBuilder-24.0.1.rpm -y
+dnf install https://download.oracle.com/otn_software/java/sqldeveloper/sqldeveloper-24.3.1-347.1826.noarch.rpm -y
+dnf install https://download.oracle.com/otn_software/java/sqldeveloper/datamodeler-24.3.1.351.0831-1.noarch.rpm -y
 ###############################################################################
 
 ############################# Codecs ###########################################
