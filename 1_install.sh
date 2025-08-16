@@ -72,6 +72,13 @@ dnf update -y
 
 USER=$(grep "1000" /etc/passwd | awk -F : '{ print $1 }')
 
+############################# Codecs ###########################################
+dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel -y
+dnf install lame\* --exclude=lame-devel -y
+dnf group upgrade --with-optional Multimedia -y
+dnf swap ffmpeg-free ffmpeg --allowerasing -y
+################################################################################
+
 ############################### Apps Generales ################################
 PAQUETES=(
     #### Powermanagement ####
@@ -297,13 +304,6 @@ dnf install https://download2.gluonhq.com/scenebuilder/24.0.1/install/linux/Scen
 dnf install https://download.oracle.com/otn_software/java/sqldeveloper/sqldeveloper-24.3.1-347.1826.noarch.rpm -y
 dnf install https://download.oracle.com/otn_software/java/sqldeveloper/datamodeler-24.3.1.351.0831-1.noarch.rpm -y
 ###############################################################################
-
-############################# Codecs ###########################################
-dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel -y
-dnf install lame\* --exclude=lame-devel -y
-dnf group upgrade --with-optional Multimedia -y
-dnf swap ffmpeg-free ffmpeg --allowerasing -y
-################################################################################
 
 ################################ Wallpapers #####################################
 echo -e "\nInstalando wallpapers..."
