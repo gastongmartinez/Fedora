@@ -62,11 +62,15 @@ curl -fsSL https://repo.librewolf.net/librewolf.repo | pkexec tee /etc/yum.repos
 # Google Chrome
 sh -c 'echo -e "[google-chrome]\nname=google-chrome\nbaseurl=https://dl.google.com/linux/chrome/rpm/stable/x86_64\nenabled=1\ngpgcheck=1\ngpgkey=https://dl.google.com/linux/linux_signing_key.pub" > /etc/yum.repos.d/google-chrome.repo'
 
+# PGAdmin
+rpm -i https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/pgadmin4-fedora-repo-2-1.noarch.rpm
+
 # CORP
 dnf copr enable atim/lazygit -y
 
-# MariaDB
+# MariaDB a MySQL
 dnf remove mariadb-server -y
+dnf install mysql-server --allowerasing -y
 
 dnf update -y
 
@@ -215,7 +219,7 @@ PAQUETES=(
     'postgis'
     'postgis-client'
     'postgis-utils'
-    'mysql-server --allowerasing'
+    'pgadmin4'
     'sqlite'
     'sqlite-analyzer'
     'sqlite-tools'
