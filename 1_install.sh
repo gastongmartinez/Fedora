@@ -65,7 +65,7 @@ curl -fsSL https://repo.librewolf.net/librewolf.repo | pkexec tee /etc/yum.repos
 dnf config-manager setopt google-chrome.enabled=1
 
 # PGAdmin
-rpm -i https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/pgadmin4-fedora-repo-2-1.noarch.rpm
+# rpm -i https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/pgadmin4-fedora-repo-2-1.noarch.rpm
 
 # CORP
 dnf copr enable atim/lazygit -y
@@ -216,7 +216,7 @@ PAQUETES=(
     'postgis'
     'postgis-client'
     'postgis-utils'
-    'pgadmin4'
+    #'pgadmin4'
     'sqlite'
     'sqlite-analyzer'
     'sqlite-tools'
