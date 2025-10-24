@@ -147,7 +147,6 @@ PAQUETES=(
     'dnfdragora'
     'stacer'
     'timeshift'
-    'setroubleshoot'
     'solaar'
     'splix'
 
