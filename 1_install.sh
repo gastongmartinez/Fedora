@@ -195,8 +195,7 @@ PAQUETES=(
     'php'
     'php-gd'
     'php-mysqlnd'
-    'dotnet-sdk-8.0'
-    'dotnet-sdk-9.0'
+    'dotnet-sdk-10.0'
 
     #### Fuentes ####
     'terminus-fonts'
