@@ -133,6 +133,7 @@ PAQUETES=(
     'neovim'
     'python3-neovim'
     'emacs'
+    'scribus'
     'flameshot'
     'klavaro'
     'fd-find'
