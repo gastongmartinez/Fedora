@@ -295,7 +295,7 @@ fi
 
 dnf install https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm -y
 dnf install https://corretto.aws/downloads/latest/amazon-corretto-21-x64-linux-jdk.rpm -y
-dnf install https://download.oracle.com/java/25/latest/jdk-25_linux-x64_bin.rpm -y
+dnf install https://corretto.aws/downloads/latest/amazon-corretto-25-x64-linux-jdk.rpm -y
 dnf install https://download2.gluonhq.com/scenebuilder/25.0.0/install/linux/SceneBuilder-25.0.0.rpm -y
 dnf install https://download.oracle.com/otn_software/java/sqldeveloper/sqldeveloper-24.3.1-347.1826.noarch.rpm -y
 dnf install https://download.oracle.com/otn_software/java/sqldeveloper/datamodeler-24.3.1.351.0831-1.noarch.rpm -y
