@@ -150,6 +150,7 @@ PAQUETES=(
     'timeshift'
     'solaar'
     'splix'
+    'fastfetch'
 
     #### Multimedia ####
     'vlc'
