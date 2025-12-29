@@ -118,6 +118,14 @@ mv zellij "$HOME/.local/bin/"
 # Atuin
 curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
+# LazyVim
+read -rp "Instalar LazyVim? (S/N): " LVIM
+if [[ $LVIM =~ ^[Ss]$ ]]; then
+    git clone https://github.com/LazyVim/starter ~/.config/lnv
+    rm -rf ~/.config/lnv/.git
+    echo 'alias lnv="NVIM_APPNAME=lnv nvim"' >> ~/.zshrc
+fi
+
 # Zed Editor
 curl -f https://zed.dev/install.sh | sh
 
