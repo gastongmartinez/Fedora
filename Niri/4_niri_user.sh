@@ -15,6 +15,12 @@ curl -sL https://github.com/noctalia-dev/noctalia-shell/releases/latest/download
 systemctl --user enable --now dsearch
 systemctl --user add-wants niri.service dms
 
+# Deshabilita MATUGEN
+echo 'export DMS_DISABLE_MATUGEN=1' >> ~/.zshrc
+
+# Establece tema de iconos
+dconf write /org/gnome/desktop/interface/icon-theme "'WhiteSur-grey'"
+
 # Cursores WhiteSur
 read -rp "Instalar WhiteSur Cursors? (S/N): " CUR
 if [[ $CUR =~ ^[Ss]$ ]]; then
@@ -23,6 +29,8 @@ if [[ $CUR =~ ^[Ss]$ ]]; then
    ./install.sh
    cd ..
    rm -rf WhiteSur-cursors
+
+   dconf write /org/gnome/desktop/interface/cursor-theme "'WhiteSur-cursors'"
 fi
 
 # Tema WhiteSur GTK
@@ -41,6 +49,10 @@ if [[ $GTK =~ ^[Ss]$ ]]; then
    fi
    cd ..
    rm -rf WhiteSur-gtk-theme
+
+   dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
+   dconf write /org/gnome/desktop/interface/gtk-theme "'WhiteSur-Dark'"
+   dconf write /org/gnome/shell/extensions/user-theme/name "'WhiteSur-Dark'"
 fi
 
 # Tema WhiteSur KDE
