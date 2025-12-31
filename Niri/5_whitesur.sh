@@ -49,7 +49,7 @@ if [[ $KDE =~ ^[Ss]$ ]]; then
       sudo ./install.sh
       # necesita plasmashell
    fi
-   cd ..
+   cd ../..
    rm -rf WhiteSur-kde
 fi
 
