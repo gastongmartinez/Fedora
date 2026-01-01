@@ -27,8 +27,8 @@ if [[ $GTK =~ ^[Ss]$ ]]; then
    sudo flatpak override --filesystem=xdg-config/gtk-4.0
    if [ ! -d ~/.themes ]; then
        mkdir -p ~/.themes
-       tar -xf ./release/WhiteSur-Dark.tar.xz -C ~/.themes/
    fi
+   tar -xf ./release/WhiteSur-Dark.tar.xz -C ~/.themes/
    cd ..
    rm -rf WhiteSur-gtk-theme
 
