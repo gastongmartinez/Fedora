@@ -95,6 +95,7 @@ PAQUETES=(
     'librewolf'
     'thunderbird'
     'remmina'
+    'freerdp'
     'qbittorrent'
     'brave-browser'
 
@@ -111,22 +112,18 @@ PAQUETES=(
     #### Archivos ####
     'mc'
     'thunar'
-    'vifm'
     'stow'
     'ripgrep'
     'autofs'
 
     #### Sistema ####
     'tldr'
-    'helix'
     'lsd'
     'corectrl'
     'p7zip'
     'unrar'
     'alacritty'
-    'kitty'
     'htop'
-    'bpytop'
     'lshw'
     'lshw-gui'
     'powerline'
@@ -246,7 +243,6 @@ read -rp "Instalar KDE Apps? (S/N): " KAPPS
 if [[ $KAPPS =~ ^[Ss]$ ]]; then
     KDEAPPS=(
         'kvantum'
-        'kate'
         'kwallet'
         'ksystemlog'
         'kcolorchooser'
