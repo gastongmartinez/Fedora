@@ -43,13 +43,7 @@ if [[ $KDE =~ ^[Ss]$ ]]; then
    git clone https://github.com/vinceliuice/WhiteSur-kde.git
    cd WhiteSur-kde || return
    ./install.sh
-   read -rp "Instalar Tema WhiteSur SDDM? (S/N): " SDDM
-   if [[ $SDDM =~ ^[Ss]$ ]]; then
-      cd sddm || return
-      sudo ./install.sh
-      # necesita plasmashell
-   fi
-   cd ../..
+   cd ..
    rm -rf WhiteSur-kde
 fi
 
