@@ -22,8 +22,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 if [ ! -d ~/.local/bin ]; then
     mkdir -p ~/.local/bin
 fi
-curl -L https://github.com/rust-lang/rust-analyzer/releases/latest/download/rust-analyzer-x86_64-unknown-linux-gnu.gz | gunzip -c - > ~/.local/bin/rust-analyzer
-chmod +x ~/.local/bin/rust-analyzer
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # Flatpak
@@ -99,14 +97,24 @@ go install golang.org/x/tools/gopls@latest
 go install golang.org/x/tools/cmd/goimports@latest
 go install github.com/go-delve/delve/cmd/dlv@latest
 pip install black 'python-lsp-server[all]' pyright yamllint autopep8
-cargo install taplo-cli --locked
-cargo install stylua
-sudo npm install -g neovim prettier bash-language-server vscode-langservers-extracted emmet-ls typescript typescript-language-server yaml-language-server live-server markdownlint markdownlint-cli dockerfile-language-server-nodejs stylelint js-beautify
+
+rustup component add rust-analyzer
+
+wget https://github.com/tamasfe/taplo/releases/download/0.10.0/taplo-linux-x86_64.gz
+gunzip taplo-linux-x86_64.gz
+chmod +x taplo-linux-x86_64
+mv taplo-linux-x86_64 "$HOME/.local/bin/taplo"
+
+wget https://github.com/JohnnyMorganz/StyLua/releases/download/v2.3.1/stylua-linux-x86_64.zip
+unzip stylua-linux-x86_64.zip -d "$HOME/.local/bin/"
+rm stylua-linux-x86_64.zip
+
 wget https://github.com/artempyanykh/marksman/releases/download/2024-12-18/marksman-linux-x64
 mv marksman-linux-x64 marksman
 chmod +x marksman
 mv marksman "$HOME/.local/bin/"
 
+sudo npm install -g neovim prettier bash-language-server vscode-langservers-extracted emmet-ls typescript typescript-language-server yaml-language-server live-server markdownlint markdownlint-cli dockerfile-language-server-nodejs stylelint js-beautify
 
 # ZelliJ
 wget https://github.com/zellij-org/zellij/releases/download/v0.43.1/zellij-x86_64-unknown-linux-musl.tar.gz
