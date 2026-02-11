@@ -21,3 +21,9 @@ echo 'export DMS_DISABLE_MATUGEN=1' >> ~/.zshrc
 # Inicializa firefox
 firefox
 
+# Niri Config
+if [ ! -d ~/.config/niri ]; then
+    mkdir -p ~/.config/niri
+fi
+cp config.kdl ~/.config/niri/
+
