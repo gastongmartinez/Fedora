@@ -8,8 +8,8 @@ if [ "$R_USER" -eq 0 ]; then
 fi
 
 # Instalacion noctalia-shell
-mkdir -p ~/.config/quickshell/noctalia-shell
-curl -sL https://github.com/noctalia-dev/noctalia-shell/releases/latest/download/noctalia-latest.tar.gz | tar -xz --strip-components=1 -C ~/.config/quickshell/noctalia-shell
+#mkdir -p ~/.config/quickshell/noctalia-shell
+#curl -sL https://github.com/noctalia-dev/noctalia-shell/releases/latest/download/noctalia-latest.tar.gz | tar -xz --strip-components=1 -C ~/.config/quickshell/noctalia-shell
 
 # Servicios de usuario
 systemctl --user enable --now dsearch
