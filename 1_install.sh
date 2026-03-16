@@ -130,7 +130,6 @@ PAQUETES=(
     'powerline'
     'neovim'
     'python3-neovim'
-    'emacs'
     'scribus'
     'flameshot'
     'klavaro'
