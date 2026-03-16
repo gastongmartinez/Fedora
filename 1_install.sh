@@ -321,8 +321,8 @@ firewall-cmd --add-service=cockpit --permanent
 firewall-cmd --add-service=http --permanent
 firewall-cmd --add-service=https --permanent
 
-alternatives --set java /usr/lib/jvm/java-21-amazon-corretto/bin/java
-alternatives --set javac /usr/lib/jvm/java-21-amazon-corretto/bin/javac
+alternatives --set java /usr/lib/jvm/java-25-amazon-corretto/bin/java
+alternatives --set javac /usr/lib/jvm/java-25-amazon-corretto/bin/javac
 
 read -rp "Modificar fstab? (S/N): " FST
 if [[ $FST =~ ^[Ss]$ ]]; then
