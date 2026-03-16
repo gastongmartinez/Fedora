@@ -88,7 +88,7 @@ gunzip taplo-linux-x86_64.gz
 chmod +x taplo-linux-x86_64
 mv taplo-linux-x86_64 "$HOME/.local/bin/taplo"
 
-wget https://github.com/JohnnyMorganz/StyLua/releases/download/v2.3.1/stylua-linux-x86_64.zip
+wget https://github.com/JohnnyMorganz/StyLua/releases/download/v2.4.0/stylua-linux-x86_64.zip
 unzip stylua-linux-x86_64.zip -d "$HOME/.local/bin/"
 rm stylua-linux-x86_64.zip
 
