@@ -150,8 +150,6 @@ PAQUETES=(
     'fastfetch'
 
     #### Multimedia ####
-    'vlc'
-    'python-vlc'
     'mpv'
     'HandBrake'
     'HandBrake-gui'
