@@ -107,7 +107,7 @@ rm zellij-x86_64-unknown-linux-musl.tar.gz
 mv zellij "$HOME/.local/bin/"
 
 # Atuin
-curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
+curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh -s -- --non-interactive
 
 # LazyVim
 read -rp "Instalar LazyVim? (S/N): " LVIM
