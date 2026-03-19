@@ -95,7 +95,6 @@ PAQUETES=(
     'librewolf'
     'thunderbird'
     'remmina'
-    'freerdp'
     'qbittorrent'
     'brave-browser'
 
@@ -120,7 +119,7 @@ PAQUETES=(
     'tldr'
     'lsd'
     'corectrl'
-    'p7zip'
+    '7zip-standalone'
     'unrar'
     'alacritty'
     'htop'
@@ -143,7 +142,6 @@ PAQUETES=(
     'pandoc'
     'ulauncher'
     'dnfdragora'
-    'stacer'
     'timeshift'
     'solaar'
     'splix'
@@ -211,7 +209,7 @@ PAQUETES=(
     'postgis'
     'postgis-client'
     'postgis-utils'
-    #'pgadmin4'
+    'pgadmin4'
     'sqlite'
     'sqlite-analyzer'
     'sqlite-tools'
@@ -223,11 +221,11 @@ PAQUETES=(
     'cockpit-machines'
     'cockpit-podman'
     'cockpit-selinux'
-    'cockpit-navigator'
+    'cockpit-files'
 
     ### Virtualizacion ###
     'virt-manager'
-    'ebtables-services'
+    'iptables-services'
     'bridge-utils'
     'libguestfs'
 )
@@ -288,7 +286,7 @@ if [[ $GAPPS =~ ^[Ss]$ ]]; then
     sed -i "s/Icon=\/var\/lib\/AccountsService\/icons\/$USER/Icon=\/usr\/share\/backgrounds\/wallpapers\/Fringe\/fibonacci3.jpg/g" "/var/lib/AccountsService/users/$USER"
 fi
 
-dnf install https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm -y
+rpm --nodigest -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm -y
 # dnf install https://corretto.aws/downloads/latest/amazon-corretto-21-x64-linux-jdk.rpm -y
 dnf install https://corretto.aws/downloads/latest/amazon-corretto-25-x64-linux-jdk.rpm -y
 # dnf install https://download2.gluonhq.com/scenebuilder/25.0.0/install/linux/SceneBuilder-25.0.0.rpm -y
