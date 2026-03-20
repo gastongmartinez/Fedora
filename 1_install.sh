@@ -286,7 +286,7 @@ if [[ $GAPPS =~ ^[Ss]$ ]]; then
     sed -i "s/Icon=\/var\/lib\/AccountsService\/icons\/$USER/Icon=\/usr\/share\/backgrounds\/wallpapers\/Fringe\/fibonacci3.jpg/g" "/var/lib/AccountsService/users/$USER"
 fi
 
-rpm --nodigest -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm -y
+rpm --nodigest -i https://downloads.sourceforge.net/project/mscorefonts2/rpms/msttcore-fonts-installer-2.6-1.noarch.rpm
 # dnf install https://corretto.aws/downloads/latest/amazon-corretto-21-x64-linux-jdk.rpm -y
 dnf install https://corretto.aws/downloads/latest/amazon-corretto-25-x64-linux-jdk.rpm -y
 # dnf install https://download2.gluonhq.com/scenebuilder/25.0.0/install/linux/SceneBuilder-25.0.0.rpm -y
