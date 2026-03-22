@@ -15,7 +15,7 @@ fi
 
 DIRE=$(pwd)
 # Arc Menu
-git clone https://gitlab.com/arcmenu/ArcMenu.git
+git clone https://gitlab.com/arcmenu/ArcMenu.git #
 cd ArcMenu || return
 make install
 cd "$DIRE" || return
@@ -48,7 +48,7 @@ cd "$DIRE" || return
 rm -rf gnome-shell-extensions
 
 flatpak --user install flathub com.mattjakeman.ExtensionManager -y
-flatpak --user install flathub org.gabmus.gfeeds -y
+flatpak --user install flathub io.gitlab.news_flash.NewsFlash -y
 
 sleep 2
 
