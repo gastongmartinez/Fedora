@@ -48,6 +48,7 @@ cd "$DIRE" || return
 rm -rf gnome-shell-extensions
 
 flatpak --user install flathub com.mattjakeman.ExtensionManager -y
+flatpak --user install flathub org.gabmus.gfeeds -y
 
 sleep 2
 

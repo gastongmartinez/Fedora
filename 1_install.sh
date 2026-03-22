@@ -265,7 +265,6 @@ read -rp "Instalar GNOME Apps? (S/N): " GAPPS
 if [[ $GAPPS =~ ^[Ss]$ ]]; then
     GNAPPS=(
         'gnome-tweaks'
-        'gnome-feeds'
         'gnome-extensions-app'
         'gnome-shell-extension-user-theme'
         'gnome-shell-extension-blur-my-shell'
