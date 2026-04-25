@@ -272,7 +272,6 @@ if [[ $GAPPS =~ ^[Ss]$ ]]; then
         'gnome-shell-extension-native-window-placement'
         'gnome-shell-extension-dash-to-dock'
         'gnome-shell-extension-no-overview'
-        'gnome-shell-extension-caffeine'
         'gnome-commander'
         'file-roller-nautilus'
         'qalculate-gtk'

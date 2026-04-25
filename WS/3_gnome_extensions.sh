@@ -15,7 +15,7 @@ fi
 
 DIRE=$(pwd)
 # Arc Menu
-git clone https://gitlab.com/arcmenu/ArcMenu.git #
+git clone https://gitlab.com/arcmenu/ArcMenu.git
 cd ArcMenu || return
 make install
 cd "$DIRE" || return
@@ -46,6 +46,14 @@ meson build
 ninja -C build install
 cd "$DIRE" || return
 rm -rf gnome-shell-extensions
+
+# Caffeine
+git clone https://github.com/eonpatapon/gnome-shell-extension-caffeine.git
+cd gnome-shell-extension-caffeine || return
+make build
+make install
+cd "$DIRE" || return
+rm -rf gnome-shell-extension-caffeine
 
 flatpak --user install flathub com.mattjakeman.ExtensionManager -y
 flatpak --user install flathub io.gitlab.news_flash.NewsFlash -y
