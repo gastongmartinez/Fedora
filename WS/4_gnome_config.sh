@@ -46,8 +46,7 @@ dconf write /org/gnome/mutter/overlay-key "'Super_R'"
 dconf write /org/gnome/shell/extensions/arcmenu/pinned-app-list "['Web', '', 'org.gnome.Epiphany.desktop', 'Terminal', '', 'orggnome.Terminal. desktop', 'ArcMenu Settings', 'ArcMenu_ArcMenuIcon', 'gnome-extensions prefs arcmenu@arcmenu.com']"
 dconf write /org/gnome/shell/extensions/arcmenu/menu-hotkey "'Undefined'"
 dconf write /org/gnome/desktop/wm/keybindings/panel-main-menu "['Super_L']"
-dconf write /org/gnome/shell/extensions/arcmenu/menu-button-icon "'Distro_Icon'"
-dconf write /org/gnome/shell/extensions/arcmenu/distro-icon 2
+dconf write /org/gnome/shell/extensions/arcmenu/menu-button-icon "'resource:///org/gnome/shell/extensions/arcmenu/icons/scalable/actions/distro-fedora-symbolic.svg'"
 
 # Logo
 dconf write /org/fedorahosted/background-logo-extension/logo-always-visible true
