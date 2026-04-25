@@ -264,6 +264,7 @@ fi
 read -rp "Instalar GNOME Apps? (S/N): " GAPPS
 if [[ $GAPPS =~ ^[Ss]$ ]]; then
     GNAPPS=(
+        'glib2-devel'
         'gnome-tweaks'
         'gnome-extensions-app'
         'gnome-shell-extension-user-theme'
